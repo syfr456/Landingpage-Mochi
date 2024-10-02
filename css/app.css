@@ -147,7 +147,7 @@ aside.aside-section {
 
 .content-description {
     flex: 1;
-   
+
 }
 
 
@@ -315,15 +315,16 @@ footer {
         max-width: 80%;
     }
 
-    .content-description{
+    .content-description {
         display: flex;
-        flex-direction: column; 
-        align-items: center;  
+        flex-direction: column;
+        align-items: center;
     }
-    .content-2{
+
+    .content-2 {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -355,37 +356,47 @@ footer {
         width: 90%;
     }
 
+
     .promo-container {
         flex-direction: column;
-    }
-
-    .promo-section {
-        margin-bottom: 1rem;
+        text-align: center;
     }
 
     .promo-image img {
+        margin-top: 1rem auto 0;
+        max-width: 80%;
+    }
+
+    .promo-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .promo-button {
+        display: inline-block;
         margin-top: 1rem;
-
     }
 
-    .content-description{
+
+
+    .content-description {
         display: flex;
-        flex-direction: column; 
-        align-items: center;  
+        flex-direction: column;
+        align-items: center;
     }
 
-    .content-2{
+    .content-2 {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media (max-width: 480px) {
-    .content-2{
+    .content-2 {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .title {
@@ -395,11 +406,11 @@ footer {
     button {
         padding: 0.5rem 1.5rem;
     }
-    
-    .content-description{
+
+    .content-description {
         display: flex;
-        flex-direction: column; 
-        align-items: center;  
+        flex-direction: column;
+        align-items: center;
 
     }
 
