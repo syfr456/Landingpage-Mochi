@@ -147,7 +147,10 @@ aside.aside-section {
 
 .content-description {
     flex: 1;
+   
 }
+
+
 
 .title {
     font-size: 2rem;
@@ -311,6 +314,12 @@ footer {
         margin-top: 1rem;
         max-width: 80%;
     }
+
+    .content-description{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;  
+    }
 }
 
 @media (max-width: 768px) {
@@ -353,6 +362,12 @@ footer {
         margin-top: 1rem;
 
     }
+
+    .content-description{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;  
+    }
 }
 
 @media (max-width: 480px) {
@@ -362,6 +377,13 @@ footer {
 
     button {
         padding: 0.5rem 1.5rem;
+    }
+    
+    .content-description{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;  
+
     }
 
     .contact-info li {
