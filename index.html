@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mochi - Camilan Nikmat dan Lembut</title>
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="img/mochi.png" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,16 +22,23 @@
   <body>
     <header class="navbar-container" role="banner">
       <div class="logo">
-        <img
-          src="img/mochi.png"
-          alt="Logo of Mochi - Camilan Nikmat dan Lembut"
-        />
+        <img src="img/mochi.png" alt="Logo of Mochi" />
       </div>
-      <nav class="nav-list" role="navigation">
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav-list" id="nav-list">
         <ul>
           <li><a href="#beranda">Beranda</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#promo">Promo</a></li>
+          <li>
+            <a href="https://www.dicoding.com/users/syfrfira" target="_blank"
+              >Profil Dicoding</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -101,13 +109,13 @@
               <div class="promo-content">
                 <h2>Promo Terbaru</h2>
                 <div class="content-2">
-                    <p>
-                      Dapatkan Daifuku Mochi <strong>Rp 18.000</strong> untuk setiap
-                      pembelian Mochi Daifuku 25 Agustus 2024!
-                    </p>
-                    <button class="promo-button" aria-label="Dapatkan sekarang">
-                      Dapatkan Sekarang
-                    </button>
+                  <p>
+                    Dapatkan Daifuku Mochi <strong>Rp 18.000</strong> untuk
+                    setiap pembelian Mochi Daifuku 25 Agustus 2024!
+                  </p>
+                  <button class="promo-button" aria-label="Dapatkan sekarang">
+                    Dapatkan Sekarang
+                  </button>
                 </div>
               </div>
               <div class="promo-image">
@@ -118,44 +126,46 @@
         </article>
 
         <aside class="aside-section" role="complementary">
-          <article>
-            <h2>Kontak Kami</h2>
-            <div class="logo-container">
-              <img src="img/mochi.jpg" alt="Logo Perusahaan" class="logo" />
-            </div>
-            <ul class="contact-info">
+          <h2>Kontak Kami</h2>
+
+          <div class="logo-container">
+            <img src="img/mochi.jpg" alt="Logo Perusahaan" class="logo" />
+          </div>
+
+          <ul class="contact-info">
+            <li>
+              <strong>Telepon:</strong>
+              <a href="tel:+621234567890">+62 123 456 7890</a>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:cs@mochi.com">cs@mochi.com</a>
+            </li>
+            <li>
+              <strong>Alamat:</strong>
+              Bukit Bestari, Kota Tanjungpinang, Indonesia
+            </li>
+          </ul>
+
+          <div class="social-media">
+            <h3>Ikuti Kami</h3>
+            <ul>
               <li>
-                <strong>Telepon:</strong>
-                <a href="tel:+621234567890">+62 123 456 7890</a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <strong>Email:</strong>
-                <a href="mailto:cs@mochi.com">cs@mochi.com</a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <strong>Alamat:</strong> Bukit Bestari, Kota Tanjungpinang,
-                Indonesia
+                <a href="#"><i class="fab fa-instagram"></i></a>
               </li>
             </ul>
-            <div class="social-media">
-              <h3>Ikuti Kami</h3>
-              <ul>
-                <li>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-              </ul>
-            </div>
-          </article>
+          </div>
         </aside>
       </div>
     </main>
 
     <footer>&#169; 2024 Mochi. All rights reserved.</footer>
+    <script src="index.js"></script>
   </body>
 </html>

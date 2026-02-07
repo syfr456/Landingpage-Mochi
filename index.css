@@ -79,13 +79,6 @@ aside.aside-section {
     max-height: 400px;
 }
 
-.aside-section {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .contact-info {
     list-style-type: none;
     padding: 0;
@@ -221,6 +214,16 @@ button:hover {
     margin-bottom: 15px;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FF7777;
+    transition: 0.3s;
+}
+
 .badge {
     background-color: #FF7777;
     color: white;
@@ -275,13 +278,7 @@ footer {
 }
 
 @media (max-width: 853px) {
-    .nav-list ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .content-wrapper {
+      .content-wrapper {
         flex-direction: column;
     }
 
@@ -329,33 +326,36 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        padding: 1rem 0;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-list.active {
+        display: block;
+    }
+
     .nav-list ul {
         flex-direction: column;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    .title {
-        font-size: 2.5rem;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .content-image img {
+      .nav-list li a {
+        display: block;
         width: 100%;
-        margin: 0;
+        text-align: center;
     }
-
-    .menu-item {
-        width: 90%;
-    }
-
 
     .promo-container {
         flex-direction: column;
@@ -363,34 +363,11 @@ footer {
     }
 
     .promo-image img {
-        margin-top: 1rem auto 0;
+        margin-top: 1rem;
         max-width: 80%;
     }
-
-    .promo-content p {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-    }
-
-    .promo-button {
-        display: inline-block;
-        margin-top: 1rem;
-    }
-
-
-
-    .content-description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
+
 
 @media (max-width: 480px) {
     .content-2 {
